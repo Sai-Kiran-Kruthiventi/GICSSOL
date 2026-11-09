@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-base: #06142F;
+    --navy-dark: #040D1F;
+    --navy-mid: #081D3F;
+    --navy-card: #0A2550;
+    --blue-primary: #0066FF;
+    --cyan-accent: #00D9FF;
+    --royal-blue: #1769E0;
+    --solar-gold: #FFC928;
+    --golden-yellow: #FFD84A;
+    --sustainability-green: #9BE51A;
+    --pure-white: #FFFFFF;
+    --soft-white: #EAF2FF;
+
+    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono-tech: 'Space Grotesk', sans-serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #06142F;
+    color: #EAF2FF;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-tech {
+    font-family: var(--font-mono-tech);
+  }
+}
+
+/* =========================================================================
+   GICSSOL BRAND GLOWS & AMBIENCE
+   ========================================================================= */
+
+.glow-blue {
+  box-shadow: 0 0 35px rgba(0, 102, 255, 0.35);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 35px rgba(0, 217, 255, 0.30);
+}
+
+.glow-gold {
+  box-shadow: 0 0 35px rgba(255, 201, 40, 0.35);
+}
+
+.glow-green {
+  box-shadow: 0 0 35px rgba(155, 229, 26, 0.25);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(255, 201, 40, 0.5);
+}
+
+/* Luxury Letter Spacing Hierarchy */
+.luxury-text {
+  letter-spacing: 0.45em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.luxury-subtext {
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.vertical-rail {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* =========================================================================
+   GICSSOL BUTTON STYLES
+   ========================================================================= */
+
+/* Electric CTA: Blue / Cyan Gradient with Glow */
+.btn-electric {
+  background: linear-gradient(135deg, #0066FF 0%, #00D9FF 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(0, 217, 255, 0.5);
+  box-shadow: 0 4px 25px rgba(0, 102, 255, 0.35);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-electric:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 35px rgba(0, 217, 255, 0.55);
+  border-color: #00D9FF;
+}
+
+.btn-electric-outline {
+  background: rgba(6, 20, 47, 0.6);
+  backdrop-filter: blur(8px);
+  color: #00D9FF;
+  border: 1px solid rgba(0, 217, 255, 0.4);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-electric-outline:hover {
+  background: rgba(0, 102, 255, 0.2);
+  color: #FFFFFF;
+  border-color: #00D9FF;
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.35);
+}
+
+/* Solar CTA: Gold / Yellow Gradient with Glow */
+.btn-solar {
+  background: linear-gradient(135deg, #FFC928 0%, #FFD84A 100%);
+  color: #06142F;
+  border: 1px solid rgba(255, 216, 74, 0.6);
+  box-shadow: 0 4px 25px rgba(255, 201, 40, 0.35);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-solar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 35px rgba(255, 201, 40, 0.6);
+  border-color: #FFFFFF;
+}
+
+.btn-solar-outline {
+  background: rgba(6, 20, 47, 0.6);
+  backdrop-filter: blur(8px);
+  color: #FFC928;
+  border: 1px solid rgba(255, 201, 40, 0.4);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-solar-outline:hover {
+  background: rgba(255, 201, 40, 0.2);
+  color: #FFFFFF;
+  border-color: #FFD84A;
+  box-shadow: 0 0 25px rgba(255, 201, 40, 0.35);
+}
+
+/* =========================================================================
+   BACKGROUND GRIDS & AMBIENT TEXTURES
+   ========================================================================= */
+
+.bg-deep-navy {
+  background: linear-gradient(180deg, #06142F 0%, #040D1F 100%);
+}
+
+.bg-navy-gradient {
+  background: radial-gradient(circle at 50% 30%, #0A2550 0%, #081D3F 45%, #06142F 100%);
+}
+
+.bg-electric-ambient {
+  background: radial-gradient(circle at 30% 40%, rgba(0, 102, 255, 0.22) 0%, rgba(0, 217, 255, 0.08) 40%, rgba(6, 20, 47, 0.95) 75%);
+}
+
+.bg-solar-ambient {
+  background: radial-gradient(circle at 70% 40%, rgba(255, 201, 40, 0.22) 0%, rgba(155, 229, 26, 0.08) 40%, rgba(6, 20, 47, 0.95) 75%);
+}
+
+.solar-grid {
+  background-image: 
+    linear-gradient(rgba(255, 201, 40, 0.06) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(255, 201, 40, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.electric-grid {
+  background-image: 
+    linear-gradient(rgba(0, 217, 255, 0.06) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(0, 217, 255, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040D1F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A2550;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0066FF;
+}
+
+/* Animations for Energy Flow Particles */
+@keyframes flowLight {
+  0% { transform: translateY(0) scale(1); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-80px) scale(0.7); opacity: 0; }
+}
+
+.animate-energy-particle {
+  animation: flowLight 4s infinite ease-in-out;
+}
+
+
+

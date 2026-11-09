@@ -1,0 +1,6 @@
+{
+  "name": "GICSSOL | Electric Vehicles & Solar Energy",
+  "description": "Glow Infinite Smart Solutions (GICSSOL) - Dual sector high-performance electric vehicles and architectural solar power solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
